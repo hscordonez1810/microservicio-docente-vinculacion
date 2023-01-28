@@ -3,7 +3,7 @@ from api.views import PortafolioViewSet
 
 router = DefaultRouter()
 
-router.register('api/Portafolio', PortafolioViewSet)
+router.register('api/portafolio', PortafolioViewSet)
 
 urlpatterns = []
 
