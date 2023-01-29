@@ -3,7 +3,7 @@ from api.views import SolicitudViewSet,PersonaViewSet,TipoPersonaCatalogoViewSet
 
 router = DefaultRouter()
 
-router.register('api/portafolio', SolicitudViewSet)
+router.register('api/solicitud', SolicitudViewSet)
 
 router.register('api/persona', PersonaViewSet)
 

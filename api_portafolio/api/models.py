@@ -27,7 +27,7 @@ class TipoPersonaCatalogo (models.Model):
 class Solicitud (models.Model):
     estado= models.BooleanField()
     tipo_solicitud = models.CharField(max_length=15)
-    fecha_emision = models.DateTimeField()
+    fecha_emision = models.DateField()
     tipoPersona = models.ForeignKey(TipoPersonaCatalogo, on_delete=models.PROTECT)
 
 class Portafolio (models.Model):
