@@ -16,7 +16,7 @@ class CatalogoViewSet (viewsets.ModelViewSet):
     serializer_class = CatalogoSerializer
     queryset = Catalogo.objects.all()
 
-class CatalogoViewSet (viewsets.ModelViewSet):
+class TipoPersonaCatalogoViewSet (viewsets.ModelViewSet):
     serializer_class = TipoPersonaCatalogoSerializer
     queryset = TipoPersonaCatalogo.objects.all()
 
