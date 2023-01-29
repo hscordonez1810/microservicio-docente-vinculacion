@@ -1,10 +1,15 @@
 from rest_framework import viewsets
 
-from api.serializers import PortafolioSerializer
-from api.models import Solicitud
+from api.serializers import SolicitudSerializer,PersonaSerializer
+from api.models import Solicitud,Persona
 
-class PortafolioViewSet (viewsets.ModelViewSet):
-    serializer_class = PortafolioSerializer
+class SolicitudViewSet (viewsets.ModelViewSet):
+    serializer_class = SolicitudSerializer
     queryset = Solicitud.objects.all()
+    
+
+class PersonaViewSet (viewsets.ModelViewSet):
+    serializer_class = PersonaSerializer
+    queryset = Persona.objects.all()
 
 # Create your views here.
