@@ -80,7 +80,7 @@ WSGI_APPLICATION = 'api_portafolio.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME':'vinculacion',
+        'NAME':'portafolio',
         'USER': 'postgres',
         'PASSWORD': 'postgres',
         'HOST':'localhost',
