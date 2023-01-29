@@ -4,35 +4,35 @@ from api.models import Solicitud, Catalogo, TipoPersonaCatalogo, Persona, Portaf
 class   SolicitudSerializer (serializers.ModelSerializer):
     class Meta:
         model = Solicitud
-        fields = 'all'
+        fields = '__all__'
         
 class  PersonaSerializer (serializers.ModelSerializer):
     class Meta:
         model = Persona
-        fields = 'all'
+        fields = '__all__'
     
 class   CatalogoSerializer (serializers.ModelSerializer):
     class Meta:
         model = Catalogo
-        fields = '_all_'
+        fields = '__all__'
         
         
 class   TipoPersonaCatalogoSerializer (serializers.ModelSerializer):
     class Meta:
         model = TipoPersonaCatalogo
-        fields = '_all_'
+        fields = '__all__'
 
 class   PortafolioSerializer (serializers.ModelSerializer):
     class Meta:
         model = Portafolio
-        fields = 'all'
+        fields = '__all__'
 
 class FundacionSerializer(serializers.ModelSerializer):
     class Meta:
          model = Fundacion
-         fields = 'all'
+         fields = '__all__'
 
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields = 'all'
+        fields = '__all__'
